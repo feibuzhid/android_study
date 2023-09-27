@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_second_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:layout_weight="1"
+        android:textSize="50sp"
         android:textColor="#00ff00"
-        android:text="welcome to second page2!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />/>
+        android:text="@string/second_name" />
+    />
+    <TextView
+        android:id="@+id/tv_second_hello_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="50px"
+        android:textColor="#ff0000"
+        android:text="@string/second_hello_px" />
+    />
+    <TextView
+        android:id="@+id/tv_second_hello_dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="#00ff00"
+        android:text="@string/second_hello_dp" />
+    />
+    <TextView
+        android:id="@+id/tv_second_hello_sp"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#0000ff"
+        android:text="@string/second_hello_sp" />
+    />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

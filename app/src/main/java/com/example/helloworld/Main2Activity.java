@@ -17,6 +17,6 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         TextView tv_second_hello = findViewById(R.id.tv_second_hello);
-        tv_second_hello.setText("欢迎来到第二个页面");
+        tv_second_hello.setText(R.string.second_name);
     }
 }
