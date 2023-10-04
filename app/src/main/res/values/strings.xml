@@ -6,6 +6,8 @@
     <string name="second_hello_dp">你好，世界（dp大小）</string>
     <string name="second_hello_sp">你好，世界（sp大小）</string>
     <string name="target_control">目标控件</string>
-    <string name="click_jump">点击跳转到下一个页面</string>
+    <string name="click_jump_xml">点击并查看点击效果</string>
+    <string name="click_jump1">点击跳转字体页面</string>
+    <string name="click_jump2">点击跳转到列表页面</string>
     <string name="show_click_res">这里查看button点击的结果</string>
 </resources>

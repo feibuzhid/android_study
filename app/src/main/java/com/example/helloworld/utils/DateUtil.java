@@ -15,8 +15,5 @@ public class DateUtil {
         return format.format(curDate);
     }
 
-//    public static void main(String[] args) {
-//        System.out.println("getNowTime() = " + getNowTime());
-//    }
 
 }

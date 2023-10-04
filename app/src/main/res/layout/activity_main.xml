@@ -13,30 +13,50 @@
         android:textSize="30sp"
         android:textColor="#00ff00"
         android:text="@string/hello_world"
-        app:layout_constraintBottom_toBottomOf="@id/bt_click2jump"
+        app:layout_constraintBottom_toBottomOf="@id/bt_click2jump_xml"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bt_click2jump"
+        android:id="@+id/bt_click2jump_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/click_jump"
         android:onClick="doClick"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hello"
-        app:layout_constraintStart_toStartOf="@+id/tv_hello"
-        app:layout_constraintEnd_toEndOf="@+id/tv_hello"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:text="@string/click_jump_xml"
+        app:layout_constraintBottom_toTopOf="@+id/bt_click2jump1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hello" />
+
+    <Button
+        android:id="@+id/bt_click2jump1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_jump1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hello"/>
+
+    <Button
+        android:id="@+id/bt_click2jump2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_jump2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_click2jump1"/>
 
     <TextView
         android:id="@+id/tv_click_res"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/show_click_res"
-        app:layout_constraintStart_toStartOf="@+id/bt_click2jump"
-        app:layout_constraintEnd_toEndOf="@+id/bt_click2jump"
-        app:layout_constraintTop_toBottomOf="@+id/bt_click2jump"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bt_click2jump2"
+        app:layout_constraintStart_toStartOf="@+id/bt_click2jump2"
+        app:layout_constraintTop_toBottomOf="@+id/bt_click2jump2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
