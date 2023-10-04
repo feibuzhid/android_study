@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="hello_world">你好，世界</string>
     <string name="second_name">welcome to second page2!</string>
     <string name="second_hello_px">你好，世界（px大小）</string>
     <string name="second_hello_dp">你好，世界（dp大小）</string>
     <string name="second_hello_sp">你好，世界（sp大小）</string>
     <string name="target_control">目标控件</string>
+    <string name="click_jump">点击跳转到下一个页面</string>
+    <string name="show_click_res">这里查看button点击的结果</string>
 </resources>

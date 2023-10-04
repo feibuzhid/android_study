@@ -1,12 +1,14 @@
 package com.example.helloworld;
 
+import android.os.Bundle;
+import android.text.format.DateUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
-import android.widget.TextView;
+import com.example.helloworld.utils.DateUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,18 +20,11 @@ public class MainActivity extends AppCompatActivity {
         tv_hello.setText("你好,世界!!!!!");
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        goNextPage();
+    public void doClick(View view) {
+        String desc = String.format("%s  : %s", DateUtil.getNowTime(), ((Button) view).getText());
+        TextView tv_click_res = findViewById(R.id.tv_click_res);
+        tv_click_res.setText(desc);
     }
 
-    private void goNextPage() {
-        TextView tv_hello = findViewById(R.id.tv_hello);
-        tv_hello.setText("3秒后进入下一个页面");
-        new Handler().postDelayed(
-                () -> startActivity(
-                        new Intent(MainActivity.this, Main2Activity.class)),
-                3000);
-    }
+
 }
