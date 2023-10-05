@@ -10,4 +10,5 @@
     <string name="click_jump1">点击跳转字体页面</string>
     <string name="click_jump2">点击跳转到列表页面</string>
     <string name="show_click_res">这里查看button点击的结果</string>
+    <string name="bt_jump2car_text">点击跳转到car页面</string>
 </resources>
